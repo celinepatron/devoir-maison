@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #ffffff00;
+    --text-color: #1d0d42; 
+    --badge-background:#000000;
+    --badge-color: #eaa20e;
+}
+
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html { *//* 1rem = 16px */
+
+.imgtlogo{
+    width: 100%;
+    padding: 0.7rem 5.25rem;
+}
+.zi {
+    background-image: url("./images/background.jpg") ;
+}
+
+.slogant1{
+    color:#4b4b4b
+}
+.slogant2{
+    color:#eaa20e
+}
+.slogant{
+    padding: 0.005rem 0.25rem;
+}
+    @font-face {
+        font-family: 'Liberation';
+        src: url('./fonts/LiberationSans-Bold-webfont.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Liberation';
+        src: url('./fonts/LiberationSans-Regular-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+body {
+    font-family: 'Liberation',
+    } 
+h1{
+    display: inline-flex;
+    font-size: 23px;
+    padding: 0.4rem 0.25rem;
+    font-family: "Liberation";
+    font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+h2{
+        font-family: 'Liberation';
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        font-size: 15px;
+        margin: 10px;
+        padding: 0.1rem 1.25rem;
+
+}
+.imgt { 
+    width: 100%;
+}
+nav li a {
+    font-family: "Liberation";
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.wrapper {
+    background-color: #ffffff;
+    max-width: 75rem; /* 1200px */
+    margin: 0 auto;
+}
+
+.top-banner {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0.25rem;
+}
+
+.nav {
+    background-color: var(--nav-bg);
+    padding: 0.625rem 0;
+}
+
+
+.nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.3rem;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        font-family: "Liberation";
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 2.5rem 1rem;
+}
+
+
+.produit{
+    background-color: #f0f4ff00;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.imgtp{
+    
+}
+.badgeimage{
+    position: relative;
+}
+
+.reduction{
+    background-color:
+    var(--badge-background) ;
+    color: var(--badge-color);
+    border-radius: 10PX;
+    width: 60px;
+    padding: 5PX;
+    MARGIN: 5PX;
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    text-align: center;
+    }
+
+.tarifsb {
+    text-decoration: line-through;
+    font-size: 30px;
+}
+
+.titreproduit{
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 30PX;
+}
+.btvlv{
+    left:1rem;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 5px;
+    padding: 5PX;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 20px;
+    
+}
+.lp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+}
+.prix{
+    font-size:30px ;
+    color:var(--badge-color)
+}
