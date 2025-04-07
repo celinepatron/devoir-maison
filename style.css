@@ -3,6 +3,7 @@
     --text-color: #1d0d42; 
     --badge-background:#000000;
     --badge-color: #eaa20e;
+    --background-colorwebsite: #28282a;
 }
 
 /* Reset de base */
@@ -13,12 +14,14 @@
 }
 
 /* html { *//* 1rem = 16px */
-
+/* logo */
 .imgtlogo{
     width: 100%;
     padding: 0.7rem 5.25rem;
+    margin-top: 15px;
 }
-.zi {
+
+head,.zi {
     background-image: url("./images/background.jpg") ;
 }
 
@@ -47,29 +50,38 @@
         font-display: swap;
     }
 body {
-    font-family: 'Liberation',
-    } 
+        font-family: 'Liberation'; /* Added missing semicolon */
+        background-color: var(--background-colorwebsite);
+        margin-left: 10px;
+    }
+    
+
+/* TEXT SLOGANT */
 h1{
     display: inline-flex;
-    font-size: 23px;
+    font-size: 19px;
     padding: 0.4rem 0.25rem;
     font-family: "Liberation";
     font-weight: normal;
         font-style: normal;
         font-display: swap;
     }
+/* TEXT Bonjour julien */
 h2{
         font-family: 'Liberation';
             font-weight: normal;
             font-style: normal;
             font-display: swap;
-        font-size: 15px;
+        font-size: 18px;
         margin: 10px;
         padding: 0.1rem 1.25rem;
-
+        padding-left: 0px;
+        margin-left: 20px;
 }
+
 .imgt { 
     width: 100%;
+    position: absolute;
 }
 nav li a {
     font-family: "Liberation";
@@ -79,24 +91,32 @@ nav li a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 12px;
 }
-.wrapper {
-    background-color: #ffffff;
-    max-width: 75rem; /* 1200px */
-    margin: 0 auto;
+/* .wrapper {  */
+     /* background-color: #ffffff;  */
+     /* max-width: 75rem; 1200px ; */
+     /* margin: 0 auto;  */
+/* }  */
+hr{
+    color: #DEDEDE;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .top-banner {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1.5rem 0.25rem;
+    font-size: 19px;
+    /* padding: 0.4rem 0.25rem; */
+    padding-top: 0px;
 }
 
 .nav {
     background-color: var(--nav-bg);
     padding: 0.625rem 0;
+    font-size: 12px;
 }
 
 
@@ -105,56 +125,81 @@ nav li a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 2.3rem;
+        gap: 5.9rem;
         flex-wrap: nowrap;
         align-content: center;
         justify-content: center;
         font-family: "Liberation";
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
+        font-weight: normal;
+        font-style: normal;
+    
 }
 
 .nav li a:hover {
     text-decoration: underline;
 }
+main { 
+    background-color:var(--background-colorwebsite);
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
-.main-content {
+.main-content { 
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    margin: 2.5rem 1rem;
+    margin: 2.5rem 1rem; 
 }
-
-
-.produit{
-    background-color: #f0f4ff00;
+.main-content-produits{
+    background-color: #f3f3f3;
     padding: 2.5rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+
+.badgeimage{
+    margin-top: 80px;
+}
+.produit{ 
+        background-color: #f3f3f3;
+        padding: 2.5rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+
 
 .imgtp{
-    
-}
-.badgeimage{
-    position: relative;
+    width: 100%;
 }
 
+
+
 .reduction{
-    background-color:
-    var(--badge-background) ;
-    color: var(--badge-color);
-    border-radius: 10PX;
-    width: 60px;
-    padding: 5PX;
-    MARGIN: 5PX;
-    position: absolute;
-    top:1rem;
-    right:1rem;
-    text-align: center;
-    }
+        background-color: var(--badge-background);
+        color: var(--badge-color);
+        border-radius: 10PX;
+        width: 60px;
+        padding: 5PX;
+        MARGIN: 5PX;
+        position: absolute;
+        right: 2REM;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Liberation';
+        font-weight: bold;
+        MARGIN-TOP: 10PX;
+        
+}
+
 
 .tarifsb {
     text-decoration: line-through;
@@ -162,21 +207,23 @@ nav li a {
 }
 
 .titreproduit{
-    text-align: center;
-    margin-top: 2px;
-    margin-bottom: 30PX;
+    position: relative;
+    bottom: 50PX;
+    text-align:center;
 }
 .btvlv{
-    left:1rem;
-    background-color: #000000;
-    color: #ffffff;
-    margin: 5px;
-    padding: 5PX;
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 20px;
-    
-}
+        left: 1rem;
+        background-color: #000000;
+        color: #ffffff;
+        margin: 5px;
+        padding: 5PX;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
 .lp{
     display: flex;
     flex-direction: row;
@@ -187,6 +234,170 @@ nav li a {
         justify-content: center;
 }
 .prix{
-    font-size:30px ;
-    color:var(--badge-color)
+    
+        font-size: 25PX;
+        color: var(--badge-color);
+        FONT-WEIGHT: bold;
 }
+
+.nav-footer {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    list-style: circle;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    padding: 1.5rem 0.25rem;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 16PX;
+}
+
+.nav-footer-list{
+    list-style:disc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    font-family: "Liberation";
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    font-size: 1rem;
+    
+}
+.nav-footer-list li::marker {
+    font-size: 2.5rem; /* Adjust the size of the marker */
+    color:#DEDEDE  ; /* Change the color of the marker */
+        ALIGN-ITEMS: center;
+        JUSTIFY-CONTENT: CENTER;
+        DISPLAY: FLEX;
+        FLEX-DIRECTION: row;
+        POSITION: relative;
+        TOP: -10PX;
+    }
+li::marker {
+    font-size: 2.5rem; /* Adjust the size of the marker */
+    color:#DEDEDE  ; /* Change the color of the marker */
+        
+    }
+li{
+    display:list-item; /* Use flexbox for alignment */
+    align-items:center ; /* Align marker and text vertically */
+    justify-content:flex-start; /* Align marker and text horizontally */
+    list-style-position:outside;
+}
+
+.footer-icon-container2{
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: 10PX;
+    text-align: center;
+}
+.footer-icon-container4,.footer-icon-container2,.footer-icon-container3{
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    column-width: 10em;
+}
+.footer-icon-container3{
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+.footer-icon-container4,.footer-icon-container2,.footer-icon-container3.p{
+    color: #ffffff;
+    font-size: 12px;
+    background-color:
+    #373737 ;
+}
+.footer-icon-container-reseaux-sociaux{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: 10PX;
+    text-align: center;
+    background-color: #373737;
+}
+footer{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-icon{
+    background-color: #373737;
+}
+.allfooter{
+    background-color: #373737;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* LES REGLAGES DE BASES */
+/* #wrapper {width:95%;  margin: 0 auto; }  */
+
+/* #header {width:100%; } ** */
+
+/* #content {width:100%; }  */
+
+/* #sidebar {width:100%; } */
+
+/* #footer {width:100%; }  */
+
+/* @media (min-width: 576px) { */
+    /* Add your styles for devices with a minimum width of 576px here */
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+/* @media (min-width: 768px) { */
+
+/* #wrapper {width:90%;  margin: 0 auto; } */
+
+/* #content {width:70%; float:left; } */
+
+/* #sidebar {width:30%; float:right; } */
+
+/* // Large devices (desktops, 992px and up) */
+
+/* @media (min-width: 992px) { ... } */
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+/* @media (min-width: 1200px)  */
+/* { */
+    /* Add your styles for devices with a minimum width of 1200px here */
+    /* .wrapper { */
+        /* max-width: 1200px; Adjust the maximum width as needed */
+    /* } */
+
+
